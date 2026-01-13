@@ -1,114 +1,117 @@
 # ai4medicine
 
-A learning and research hub for Xueting's PhD journey in **AI for Science (Medicine)**. This repository is designed to:
+一个用于 **AI for Science（医学）** 学习与研究的知识库，旨在：
 
-- Build a strong foundation in AI tools and methods used in medical research.
-- Maintain a curated reading list of papers related to her interests.
-- Support the process of selecting and shaping the **first AI-in-medicine paper topic**.
-
----
-
-## 🌟 Repository Goals
-
-1. **Learn AI fundamentals** relevant to clinical and biomedical applications.
-2. **Track and summarize papers** across AI + medicine.
-3. **Converge on a first research project** using structured reading, notes, and mini-experiments.
+- 构建面向医学研究的 AI 基础能力。
+- 维护可检索、可复用的论文清单与摘要。
+- 通过结构化学习与小实验，逐步收敛首个 AI in Medicine 研究课题。
 
 ---
 
-## 🗂️ Proposed Repository Structure
+## 🌟 仓库目标
+
+1. 学习临床与生物医学场景相关的 AI 基础。
+2. 持续跟踪并总结 AI + 医学相关论文。
+3. 收敛一个可执行的首个研究项目。
+
+---
+
+## 🗂️ 建议仓库结构
 
 ```
 ai4medicine/
-├── README.md                       # This guide
-├── docs/                           # Long-form notes, study plans, and summaries
-│   ├── 00_overview.md              # Orientation and roadmap
-│   ├── 01_learning_path.md         # AI learning track tailored to medicine
-│   ├── 02_tools.md                 # Tooling overview (Python, PyTorch, etc.)
-│   └── 03_research_workflow.md     # How to read, summarize, and design studies
-├── papers/                         # Paper reading list + summaries
-│   ├── 00_reading_list.md          # Master list of papers with tags
-│   ├── 01_summaries/               # Individual paper summaries
-│   └── 02_topic_clusters.md        # Grouped themes (e.g., imaging, EHR, causal AI)
-├── notebooks/                      # Jupyter notebooks for practice and experiments
-├── projects/                       # Mini-projects or replications
-├── datasets/                       # Dataset notes & access (no large files)
-├── references/                     # Citation management notes, bib files
-└── templates/                      # Paper summary templates, note templates
+├── README.md                       # 本指南
+├── docs/                           # 长文笔记、学习计划与研究流程
+│   ├── 00_overview.md              # 概览与路线图
+│   ├── 01_learning_path.md         # AI 学习路线（医学导向）
+│   ├── 02_tools.md                 # 工具与技术栈
+│   └── 03_research_workflow.md     # 阅读、总结与研究流程
+├── papers/                         # 论文清单与摘要
+│   ├── 00_reading_list.md          # 论文主清单（含标签）
+│   ├── 01_summaries/               # 单篇论文摘要
+│   └── 02_topic_clusters.md        # 主题聚类（影像、EHR、因果等）
+├── notebooks/                      # 练习与实验的 Notebook
+├── projects/                       # 小型复现实验或探索项目
+├── datasets/                       # 数据集记录（不放大文件）
+├── references/                     # 引用与文献管理
+└── templates/                      # 摘要与笔记模板
 ```
 
 ---
 
-## 📘 Suggested README Content (Long Form)
+## 📘 README 建议内容（扩展版）
 
-### 1. Introduction
-A brief description of Xueting’s background, goals, and how this repository will help guide her into AI + medicine research.
+### 1. 项目简介
+简要描述该仓库如何帮助研究者进入 AI + 医学研究领域。
 
-### 2. Learning Roadmap
-A phased roadmap that starts with foundations and leads into research specialization.
+### 2. 学习路线
+从基础能力逐步过渡到研究方法与选题。
 
-**Phase 1 — Foundations (0–3 months)**
-- Python for data science
-- Mathematics for ML (linear algebra, probability, optimization)
-- Core machine learning (supervised/unsupervised)
+**阶段一 — 基础能力（0–3 个月）**
+- Python 数据分析
+- 数学基础（线性代数、概率、优化）
+- 核心机器学习方法
 
-**Phase 2 — AI Tools for Medicine (3–6 months)**
-- Deep learning (CNNs, RNNs, transformers)
-- Medical data types (imaging, clinical text, EHR)
-- Evaluation and bias in healthcare AI
+**阶段二 — 医学 AI 工具（3–6 个月）**
+- 深度学习（CNN、RNN、Transformer）
+- 医学数据类型（影像、临床文本、EHR）
+- 评估、偏差与公平性
 
-**Phase 3 — Research & Paper Writing (6–12 months)**
-- Reproducibility and open science
-- Reading and summarizing papers
-- Defining a research gap and drafting a first manuscript
+**阶段三 — 研究与论文写作（6–12 个月）**
+- 可复现研究与开源实践
+- 论文阅读与结构化总结
+- 研究空白识别与论文初稿
 
-### 3. Core Tools to Learn
-Suggested tools and libraries:
-- Python, NumPy, Pandas
+### 3. 核心工具
+建议学习的工具与库：
+
+- Python、NumPy、Pandas
 - PyTorch / TensorFlow
 - Scikit-learn
-- Jupyter, VS Code
+- Jupyter、VS Code
 - Git + GitHub
 - LaTeX / Overleaf
 - Mendeley / Zotero
 
-### 4. Paper Reading System
-A workflow for reading and summarizing papers consistently.
+### 4. 论文阅读系统
+保持一致的阅读与总结流程。
 
-**Template fields**:
-- Title, authors, venue
-- Problem addressed
-- Dataset and methods
-- Key contributions
-- Limitations
-- Ideas for follow-up
+**模板字段**：
+- 标题、作者、会议/期刊
+- 研究问题
+- 数据集与方法
+- 关键贡献
+- 局限与后续思路
 
-### 5. Research Themes (Example Clusters)
-Potential directions Xueting may explore:
-- AI for medical imaging (radiology, pathology)
-- Clinical decision support (EHR, risk prediction)
-- Multimodal AI (imaging + text)
-- Causal AI in medicine
-- Interpretability and fairness in healthcare models
+### 5. 研究主题（示例）
+可能的研究方向：
 
-### 6. First Paper Topic Selection
-Steps to narrow down a topic:
-1. Identify 3–5 themes of interest.
-2. Read 8–10 key papers per theme.
-3. Summarize gaps and unanswered questions.
-4. Select a feasible, high-impact starting project.
+- 医学影像（放射、病理）
+- 临床决策支持（EHR、风险预测）
+- 多模态 AI（影像 + 文本）
+- 医学因果推断
+- 可解释性与公平性
 
-### 7. Collaboration & Notes
-Suggestions for how friends/mentors can contribute with comments, suggestions, and resources.
+### 6. 首个选题收敛
+收敛研究问题的步骤：
 
----
+1. 识别 3–5 个兴趣主题。
+2. 每个主题阅读 8–10 篇关键论文。
+3. 汇总研究空白与未解决问题。
+4. 选择可执行、影响力高的起步项目。
 
-## ✅ Next Steps
-1. Create initial documents under `/docs` and `/papers`.
-2. Add the first 10–20 papers to the reading list.
-3. Start a learning log (weekly updates).
-4. Define the first candidate paper topic by month 6.
+### 7. 协作与记录
+记录协作者的建议、讨论与资源链接。
 
 ---
 
-If you'd like, I can also generate the **actual content for the `/docs` files**, or build the **paper summary template** and sample entries to get started.
+## ✅ 下一步
+
+1. 在 `/docs` 与 `/papers` 下维护初始文档。
+2. 在阅读清单中添加首批 10–20 篇论文。
+3. 启动学习日志（每周更新）。
+4. 在第 6 个月前形成候选研究题目。
+
+---
+
+如需要，可进一步补充 `/docs` 内容或示例论文摘要。
