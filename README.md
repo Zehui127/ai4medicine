@@ -1,117 +1,63 @@
 # ai4medicine
 
-一个用于 **AI for Science（医学）** 学习与研究的知识库，旨在：
+一个面向 **AI + 医学研究** 的学习与研究仓库，目标是：
 
-- 构建面向医学研究的 AI 基础能力。
-- 维护可检索、可复用的论文清单与摘要。
-- 通过结构化学习与小实验，逐步收敛首个 AI in Medicine 研究课题。
+- 打好医学场景下的 AI 基础能力。
+- 维护可检索的论文清单与摘要。
+- 沉淀可复用的实验与项目模板。
 
----
+## 📁 仓库结构（做什么用）
 
-## 🌟 仓库目标
+- `datasets/`：数据集记录与获取方式（不存放大文件）。
+- `docs/`：可选的长文笔记与研究流程（目前已简化）。
+- `notebooks/`：学习练习、数据探索与小实验的 Notebook。
+- `papers/`：论文清单、摘要与主题聚类。
+- `projects/`：小型复现实验或探索性项目。
+- `references/`：引用管理与常用文献链接。
+- `templates/`：论文摘要、阅读笔记等模板。
+- `courses/`：经典课程链接整理（如 Stanford 系列）。
 
-1. 学习临床与生物医学场景相关的 AI 基础。
-2. 持续跟踪并总结 AI + 医学相关论文。
-3. 收敛一个可执行的首个研究项目。
+## 🧰 工具清单（从 `docs/02_tools.md` 迁移）
 
----
+**编程与数据分析**
+- Python
+- NumPy / Pandas
+- Matplotlib / Seaborn
 
-## 🗂️ 建议仓库结构
-
-```
-ai4medicine/
-├── README.md                       # 本指南
-├── docs/                           # 长文笔记、学习计划与研究流程
-│   ├── 00_overview.md              # 概览与路线图
-│   ├── 01_learning_path.md         # AI 学习路线（医学导向）
-│   ├── 02_tools.md                 # 工具与技术栈
-│   └── 03_research_workflow.md     # 阅读、总结与研究流程
-├── papers/                         # 论文清单与摘要
-│   ├── 00_reading_list.md          # 论文主清单（含标签）
-│   ├── 01_summaries/               # 单篇论文摘要
-│   └── 02_topic_clusters.md        # 主题聚类（影像、EHR、因果等）
-├── notebooks/                      # 练习与实验的 Notebook
-├── projects/                       # 小型复现实验或探索项目
-├── datasets/                       # 数据集记录（不放大文件）
-├── references/                     # 引用与文献管理
-└── templates/                      # 摘要与笔记模板
-```
-
----
-
-## 📘 README 建议内容（扩展版）
-
-### 1. 项目简介
-简要描述该仓库如何帮助研究者进入 AI + 医学研究领域。
-
-### 2. 学习路线
-从基础能力逐步过渡到研究方法与选题。
-
-**阶段一 — 基础能力（0–3 个月）**
-- Python 数据分析
-- 数学基础（线性代数、概率、优化）
-- 核心机器学习方法
-
-**阶段二 — 医学 AI 工具（3–6 个月）**
-- 深度学习（CNN、RNN、Transformer）
-- 医学数据类型（影像、临床文本、EHR）
-- 评估、偏差与公平性
-
-**阶段三 — 研究与论文写作（6–12 个月）**
-- 可复现研究与开源实践
-- 论文阅读与结构化总结
-- 研究空白识别与论文初稿
-
-### 3. 核心工具
-建议学习的工具与库：
-
-- Python、NumPy、Pandas
-- PyTorch / TensorFlow
+**机器学习与深度学习**
 - Scikit-learn
-- Jupyter、VS Code
-- Git + GitHub
+- PyTorch / TensorFlow
+- Hugging Face Transformers
+
+**开发与协作**
+- Jupyter Notebook
+- VS Code
+- Git / GitHub
+
+**写作与文献管理**
 - LaTeX / Overleaf
-- Mendeley / Zotero
+- Zotero / Mendeley
 
-### 4. 论文阅读系统
-保持一致的阅读与总结流程。
+**习惯与流程建议**
+- 每周总结学习内容与重点卡点。
+- 对关键库建立“常用 API 速查表”。
+- 每次论文阅读后更新 `papers/00_reading_list.md`。
 
-**模板字段**：
-- 标题、作者、会议/期刊
-- 研究问题
-- 数据集与方法
-- 关键贡献
-- 局限与后续思路
+## 🌐 实用学习网站（打基础、可上手）
 
-### 5. 研究主题（示例）
-可能的研究方向：
+- [Kaggle Learn](https://www.kaggle.com/learn)：Python、Pandas、ML 的短课程，适合快速上手。
+- [fast.ai](https://www.fast.ai/)：实践驱动的深度学习课程与代码。
+- [Hugging Face Course](https://huggingface.co/learn)：NLP/Transformer 入门与实践。
+- [PyTorch Tutorials](https://pytorch.org/tutorials/)：官方实践教程。
+- [scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html)：传统 ML 方法速查与示例。
+- [DeepLearning.AI Courses](https://www.deeplearning.ai/courses/)：系统化深度学习课程。
 
-- 医学影像（放射、病理）
-- 临床决策支持（EHR、风险预测）
-- 多模态 AI（影像 + 文本）
-- 医学因果推断
-- 可解释性与公平性
+## 🎓 课程索引
 
-### 6. 首个选题收敛
-收敛研究问题的步骤：
+详见 `courses/README.md`，收录 Stanford 等经典课程链接。
 
-1. 识别 3–5 个兴趣主题。
-2. 每个主题阅读 8–10 篇关键论文。
-3. 汇总研究空白与未解决问题。
-4. 选择可执行、影响力高的起步项目。
+## ✅ 下一步建议
 
-### 7. 协作与记录
-记录协作者的建议、讨论与资源链接。
-
----
-
-## ✅ 下一步
-
-1. 在 `/docs` 与 `/papers` 下维护初始文档。
-2. 在阅读清单中添加首批 10–20 篇论文。
-3. 启动学习日志（每周更新）。
-4. 在第 6 个月前形成候选研究题目。
-
----
-
-如需要，可进一步补充 `/docs` 内容或示例论文摘要。
+1. 在 `papers/00_reading_list.md` 填入第一批阅读清单。
+2. 在 `notebooks/` 里建立每周练习记录。
+3. 在 `projects/` 中选择一个小项目开始复现。
